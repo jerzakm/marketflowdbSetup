@@ -1,7 +1,7 @@
 package app;
 
-import app.config.Config;
 import app.config.ConfigHandler;
+import app.schemaBuilders.SpecialBuilder;
 import app.schemaBuilders.StandardBuilder;
 import com.google.gson.Gson;
 
@@ -11,6 +11,7 @@ public class Application {
         ConfigHandler.loadConfig();
         System.out.println(new Gson().toJson(ConfigHandler.getConfig()));
         DbHandler.initDb();
-        StandardBuilder.build();
+        //StandardBuilder.build();
+        SpecialBuilder.build();
     }
 }
