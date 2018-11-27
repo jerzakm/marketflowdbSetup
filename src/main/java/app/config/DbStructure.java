@@ -20,8 +20,6 @@ public final class DbStructure {
 
     public static final String[] rangeInTimeMoney = {
             "itBuyNowPrice",
-            "itBuyNowActive",
-            "itAdvertisementPrice",
             "itPrice" //current price - auction
     };
 
@@ -36,8 +34,8 @@ public final class DbStructure {
             "itemCategory", //LOWEST LEVEL instead of entire tree
             "itBidCount", //bids #
             "itQuantity", //stock #
-            "itFotoCount", //photo#
-            "itAdvertisementActive"
+            "itBuyNowActive",
+            "itFotoCount"
     };
 
     public static final String[] rangeInTimeBigInt = {
